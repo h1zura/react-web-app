@@ -1,0 +1,50 @@
+{
+    "elements": [
+      {
+        "id": "1",
+        "name": "UI Element",
+        "type": "button",
+        "creator": "aya@mail.ru",
+        "views": "12000",
+        "html": "<button class=\"elem-185827\"><span class=\"boxelem-185827\">Hover!</span></button>",
+        "css": ".boxelem-185827 {\n  width: 140px;\n  height: auto;\n  float: left;\n  transition: .5s linear;\n  position: relative;\n  display: block;\n  overflow: hidden;\n  padding: 15px;\n  text-align: center;\n  margin: 0 5px;\n  background: transparent;\n  text-transform: uppercase;\n  font-weight: 900;\n  background: lightblue;\n}\n\n.boxelem-185827:before {\n  position: absolute;\n  content: '';\n  left: 0;\n  bottom: 0;\n  height: 4px;\n  width: 100%;\n  border-bottom: 4px solid transparent;\n  border-left: 4px solid transparent;\n  box-sizing: border-box;\n  transform: translateX(100%);\n}\n\n.boxelem-185827:after {\n  position: absolute;\n  content: '';\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 4px;\n  border-top: 4px solid transparent;\n  border-right: 4px solid transparent;\n  box-sizing: border-box;\n  transform: translateX(-100%);\n}\n\n.boxelem-185827:hover {\n  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);\n}\n\n.boxelem-185827:hover:before {\n  border-color: #262626;\n  height: 100%;\n  transform: translateX(0);\n  transition: .3s transform linear, .3s height linear .3s;\n}\n\n.boxelem-185827:hover:after {\n  border-color: #262626;\n  height: 100%;\n  transform: translateX(0);\n  transition: .3s transform linear, .3s height linear .5s;\n}\n\n.elem-185827 {\n  color: black;\n  text-decoration: none;\n  cursor: pointer;\n  outline: none;\n  border: none;\n  background: transparent;\n}"
+      },
+      {
+        "id": "11",
+        "name": "UI Element",
+        "type": "button",
+        "creator": "aya@mail.ru",
+        "views": "12000",
+        "html": "<button class=\"comic-button\">Click me!</button>",
+        "css": ".comic-button {\n  display: inline-block;\n  padding: 10px 20px;\n  font-size: 24px;\n  font-weight: bold;\n  text-align: center;\n  text-decoration: none;\n  color: #fff;\n  background-color: #ff5252;\n  border: 2px solid #000;\n  border-radius: 10px;\n  box-shadow: 5px 5px 0px #000;\n  transition: all 0.3s ease;\n  cursor: pointer;\n}\n\n.comic-button:hover {\n  background-color: #fff;\n  color: #ff5252;\n  border: 2px solid #ff5252;\n  box-shadow: 5px 5px 0px #ff5252;\n}\n\n.comic-button:active {\n  background-color: #fcf414;\n  box-shadow: none;\n  transform: translateY(4px);\n}"
+      },
+      {
+        "id": "9",
+        "name": "UI Element",
+        "type": "button",
+        "creator": "nurs@mail.ru",
+        "views": "12000",
+        "html": "<button class=\"bookmarkBtn\"> <span class=\"IconContainer\"> <svg viewBox=\"0 0 384 512\" height=\"0.9em\" class=\"icon\"><path d=\"M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z\"></path></svg> </span> <p class=\"text\">Save</p> </button>",
+        "css": ".bookmarkBtn {\n  width: 100px;\n  height: 40px;\n  border-radius: 40px;\n  border: 1px solid rgba(255, 255, 255, 0.349);\n  background-color: rgb(12, 12, 12);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  transition-duration: .3s;\n  overflow: hidden;\n}\n\n.IconContainer {\n  width: 30px;\n  height: 30px;\n  background: linear-gradient(to bottom, rgb(255, 136, 255),rgb(172, 70, 255));\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  overflow: hidden;\n  z-index: 2;\n  transition-duration: .3s;\n}\n\n.icon {\n  border-radius: 1px;\n}\n\n.text {\n  height: 100%;\n  width: 60px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: white;\n  z-index: 1;\n  transition-duration: .3s;\n  font-size: 1.04em;\n}\n\n.bookmarkBtn:hover .IconContainer {\n  width: 90px;\n  border-radius: 40px;\n  transition-duration: .3s;\n}\n\n.bookmarkBtn:hover .text {\n  transform: translate(10px);\n  width: 0;\n  font-size: 0;\n  transition-duration: .3s;\n}\n\n.bookmarkBtn:active {\n  transform: scale(0.95);\n  transition-duration: .3s;\n}"
+      },
+      {
+        "id": "23",
+        "name": "UI Element",
+        "type": "loader",
+        "creator": "nurs@mail.ru",
+        "views": "12000",
+        "html": "<div class=\"container elem-185792\"><span class=\"elem-185793\"></span><span class=\"elem-185794\"></span><span class=\"elem-185795\"></span><span class=\"elem-185796\"></span></div>",
+        "css": ".container.elem-185792 {\n  position:relative;\n  border-radius: 50%;\n  height: 96px;\n  width: 96px;\n  animation: rotate_3922 1.2s linear infinite;\n  background-color: #9b59b6;\n  background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);\n}\n\n.container.elem-185792 span.elem-185793,\n.container.elem-185792 span.elem-185794,\n.container.elem-185792 span.elem-185795,\n.container.elem-185792 span.elem-185796 {\n  position: absolute;\n  border-radius: 50%;\n  height: 100%;\n  width: 100%;\n  background-color: #9b59b6;\n  background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);\n}\n\n.container.elem-185792 span.elem-185793 {\n  filter: blur(5px);\n}\n\n.container.elem-185792 span.elem-185794 {\n  filter: blur(10px);\n}\n\n.container.elem-185792 span.elem-185795 {\n  filter: blur(25px);\n}\n\n.container.elem-185792 span.elem-185796 {\n  filter: blur(50px);\n}\n\n.container.elem-185792::after {\n  content: \"\";\n  position: absolute;\n  top: 10px;\n  left: 10px;\n  right: 10px;\n  bottom: 10px;\n  background-color: #fff;\n  border: solid 5px #ffffff;\n  border-radius: 50%;\n}\n\n@keyframes rotate_3922 {\n  from {\n    transform: rotate(0deg);\n  }\n\n  to {\n    transform: rotate(360deg);\n  }\n}\n"
+      },
+      {
+        "id": "8",
+        "name": "UI Element",
+        "type": "loader",
+        "creator": "nurs@mail.ru",
+        "html": "<div class=\"loader8\"> <svg viewBox=\"0 0 80 80\"> <circle id=\"test\" cx=\"40\" cy=\"40\" r=\"32\"></circle> </svg> </div> <div class=\"loader8 triangle\"> <svg viewBox=\"0 0 86 80\"> <polygon points=\"43 8 79 72 7 72\"></polygon> </svg> </div> <div class=\"loader8\"> <svg viewBox=\"0 0 80 80\"> <rect x=\"8\" y=\"8\" width=\"64\" height=\"64\"></rect> </svg></div>",
+        "css": ".loader8 {\n  --path: #2f3545;\n  --dot: #5628ee;\n  --duration: 3s;\n  width: 44px;\n  height: 44px;\n  position: relative;\n}\n\n.loader8:before {\n  content: '';\n  width: 6px;\n  height: 6px;\n  border-radius: 50%;\n  position: absolute;\n  display: block;\n  background: var(--dot);\n  top: 37px;\n  left: 19px;\n  transform: translate(-18px, -18px);\n  animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;\n}\n\n.loader8 svg {\n  display: block;\n  width: 100%;\n  height: 100%;\n}\n\n.loader8 svg rect, .loader8 svg polygon, .loader8 svg circle {\n  fill: none;\n  stroke: var(--path);\n  stroke-width: 10px;\n  stroke-linejoin: round;\n  stroke-linecap: round;\n}\n\n.loader8 svg polygon {\n  stroke-dasharray: 145 76 145 76;\n  stroke-dashoffset: 0;\n  animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;\n}\n\n.loader8 svg rect {\n  stroke-dasharray: 192 64 192 64;\n  stroke-dashoffset: 0;\n  animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;\n}\n\n.loader8 svg circle {\n  stroke-dasharray: 150 50 150 50;\n  stroke-dashoffset: 75;\n  animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;\n}\n\n.loader8 .triangle {\n  width: 48px;\n}\n\n.loader8 .triangle:before {\n  left: 21px;\n  transform: translate(-10px, -18px);\n  animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;\n}\n\n@keyframes pathTriangle {\n  33% {\n    stroke-dashoffset: 74;\n  }\n\n  66% {\n    stroke-dashoffset: 147;\n  }\n\n  100% {\n    stroke-dashoffset: 221;\n  }\n}\n\n@keyframes dotTriangle {\n  33% {\n    transform: translate(0, 0);\n  }\n\n  66% {\n    transform: translate(10px, -18px);\n  }\n\n  100% {\n    transform: translate(-10px, -18px);\n  }\n}\n\n@keyframes pathRect {\n  25% {\n    stroke-dashoffset: 64;\n  }\n\n  50% {\n    stroke-dashoffset: 128;\n  }\n\n  75% {\n    stroke-dashoffset: 192;\n  }\n\n  100% {\n    stroke-dashoffset: 256;\n  }\n}\n\n@keyframes dotRect {\n  25% {\n    transform: translate(0, 0);\n  }\n\n  50% {\n    transform: translate(18px, -18px);\n  }\n\n  75% {\n    transform: translate(0, -36px);\n  }\n\n  100% {\n    transform: translate(-18px, -18px);\n  }\n}\n\n@keyframes pathCircle {\n  25% {\n    stroke-dashoffset: 125;\n  }\n\n  50% {\n    stroke-dashoffset: 175;\n  }\n\n  75% {\n    stroke-dashoffset: 225;\n  }\n\n  100% {\n    stroke-dashoffset: 275;\n  }\n}\n\n.loader8 {\n  display: inline-block;\n  margin: 0 16px;\n}\n"
+      }
+
+    ]
+  }
+  
